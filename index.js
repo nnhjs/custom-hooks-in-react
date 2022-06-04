@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client'
 import useDarkMode from './useDarkMode'
 
 function App() {
-  console.log('run App')
   const [isDark, setIsDark] = useDarkMode(false);
   const toggleMode = () => setIsDark(!isDark);
   return (
@@ -16,8 +15,6 @@ function App() {
 }
 
 export default App;
-
-console.log('App', App)
 
 const domContainer = document.getElementById('root');
 const root = ReactDOM.createRoot(domContainer);
